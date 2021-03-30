@@ -7,7 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="{{url_for('circle')}}">円の公式計算アプリ</a>
-    <a href="{{url_for('salary')}}">給与計算アプリ</a>
+    <h3>円の公式計算アプリ</h3><br>
+    <h3>値を入れてください</h3><br>
+    <form action="{{url_for('circle_ans')}}">
+        半径:<input type="text" name="s" required>
+        <input type="submit" value="計算">
+    </form>
 </body>
 </html>
